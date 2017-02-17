@@ -196,6 +196,11 @@ span {
     border: 2px solid #000;
     background-color: white;
 }
+@media screen and (max-width:700px) {
+    .projects__detail {
+        margin-left: 0;
+    }
+}
 .projects__detail--image {
     width: 100%;
     background-size: contain;
@@ -373,9 +378,6 @@ hr:after {
     padding: 0 0.2em;
 }
 
-/**
-    Responsive
-**/
 @media screen and (max-width:991px) {
     .project__process--challenge,
     .project__process--solution {
