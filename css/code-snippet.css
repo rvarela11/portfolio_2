@@ -1,0 +1,74 @@
+/*------------------------------------------------------*/
+/*--------------- General Code Snippet -----------------*/
+/*------------------------------------------------------*/
+
+/*This can be found in the process page*/
+
+.pre-code {
+  font-family: monospace;
+  background-color: rgba(0,0,0,8);
+  width: em(440);
+  margin: auto;
+  padding: 0.5em;
+  border-radius: .25em;
+  box-shadow: .1em .1em .5em rgba(0,0,0,.45);
+  line-height: 0;
+  counter-reset: line;
+  overflow-x: scroll;
+  /*white-space: nowrap;*/
+	-webkit-overflow-scrolling: touch;
+  text-transform: none;
+}
+
+.span-code {
+  display: block;
+  line-height: 1.5rem;
+  color: #fff;
+}
+
+.span-code:before {
+  counter-increment: line;
+  content: counter(line);
+  display: inline-block;
+  border-right: 1px solid #ddd;
+  padding: 0 .5em;
+  margin-right: .5em;
+  color: #888
+}
+.sc-purple {
+  color: #C594C5;
+}
+.sc-green {
+  color: #99C794;
+}
+.sc-yellow {
+  color: #FAC863;
+}
+.sc-blue {
+  color: #6699CC;
+}
+.sc-orange {
+  color: #F99157;
+}
+.sc-red {
+  color: #EC5f67;
+}
+
+/*Color examples*/
+
+/*base 00: #1B2B34
+base 01: #343D46
+base 02: #4F5B66
+base 03: #65737E
+base 04: #A7ADBA
+base 05: #C0C5CE
+base 06: #CDD3DE
+base 07: #D8DEE9
+base 08: #EC5f67
+base 09: #F99157
+base 0A: #FAC863
+base 0B: #99C794
+base 0C: #5FB3B3
+base 0D: #6699CC
+base 0E: #C594C5
+base 0F: #AB7967*/
