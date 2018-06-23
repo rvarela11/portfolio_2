@@ -201,7 +201,7 @@ span {
         margin-left: 0;
     }
 }
-.projects__detail--image {
+.projects__detail-image {
     width: 100%;
     background-size: contain;
     background-position: center center;
@@ -217,11 +217,11 @@ span {
 .imagePBC {
     background-size: 75%;
 }
-.projects__detail--image:hover {
+.projects__detail-image:hover {
     opacity: 0.2;
 }
-.projects__detail--image:after,
-.projects__detail--image:before {
+.projects__detail-image:after,
+.projects__detail-image:before {
     opacity: 0;
     transition: .2s;
     content: "";
@@ -280,38 +280,35 @@ span {
 .process__close:after {
     transform: rotate(-45deg);
 }
-.project__title h3,
-.project__description--overall h4 {
+.project__title h3 {
     font-weight: 500;
     margin-top: 5%;
     font-size: .5em;
 }
 .project__title h4,
 .project__description p,
-.process__project__title--technologies,
-.project__description--overall li,
-.process__project__title--links li a,
-.project__process--challenge h4,
-.project__process--solution-box h4,
-.process--mobile-view  {
+.process__project__title-technologies,
+.process__project__title-links li a,
+.project__process-challenge h4,
+.project__process-solution-box h4,
+.process-mobile-view  {
     font-weight: 300;
     font-size: .75em;
     padding: 0;
     text-transform: initial;
     letter-spacing: .5px;
 }
-.process__project__title--technologies,
-.project__description--overall li  {
+.process__project__title-technologies {
     margin-left: 4%;
     list-style: circle;
     line-height: 1.5;
 }
-.process__project__title--links li {
+.process__project__title-links li {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-.process__project__title--links li a {
+.process__project__title-links li a {
     background-color: var(--text);
     padding: 0 5px;
     width: 100px;
@@ -347,24 +344,24 @@ hr:after {
     color: black;
     background-color: white;
 }
-.process--mobile-view {
+.process-mobile-view {
     text-align: center;
     color: var(--subtitle);
 }
-.project__process--challenge,
-.project__process--solution {
+.project__process-challenge,
+.project__process-solution {
     display: flex;
     flex-direction: row;
 }
-.project__process--challenge-box,
-.project__process--solution-box {
+.project__process-challenge-box,
+.project__process-solution-box {
     border: 1px solid #ccc;
     padding-bottom: 20px;
 }
-.project__process--challenge-box-img {
+.project__process-challenge-box-img {
     width: 100%;
 }
-.project__process--solution-box {
+.project__process-solution-box {
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
 }
@@ -379,20 +376,20 @@ hr:after {
 }
 
 @media screen and (max-width:991px) {
-    .project__process--challenge,
-    .project__process--solution {
+    .project__process-challenge,
+    .project__process-solution {
         flex-direction: column;
     }
 }
 
 @media screen and (min-width:767px){
-    .process--mobile-view {
+    .process-mobile-view {
         display: none;
     }
 }
 
 @media screen and (max-width: 766px){
-    .process--code {
+    .process-code {
         display: none;
     }
 }

@@ -1,11 +1,10 @@
-
 // Display Process Project
 const all_sections = document.querySelectorAll("section");
 const all_projects_detail = document.querySelectorAll(".projects__detail");
 
 function displayProject () {
   const project_data_id = this.dataset.id;
-  const filters = ["verb","pbc","fuel","reddit"];
+  const filters = ["arrive", "verb", "pbc", "fuel", "portfolio", "arrive-demo-app", "hangman"];
 
   filters.forEach((filter) => {
     if (project_data_id === filter) {

@@ -13,7 +13,6 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<link rel="stylesheet" type="text/css" href="css/laptopmockup.css">
-		<link rel="stylesheet" type="text/css" href="css/code-snippet.css">
 
 		<script src="//load.sumome.com/" data-sumo-site-id="c3984687b9dcf7853a577d550e84c37d64c5c4f82ea4b7fefe31c64aabe25c24" async="async"></script>
 
@@ -36,7 +35,7 @@
 			<div>
 				<header>
 					<div class="name">Robert Varela</div>
-					<div class="home__title">Full-stack Developer</div>
+					<div class="home__title">Front End Developer</div>
 				</header>
 
 				<div class="home__nav">
@@ -60,30 +59,105 @@
 
 		<section class="projects" id="projects">
 			<div class="name">Projects</div>
+
 			<h1 class="projects__header">React</h1>
 				<div>
+					<div data-id="arrive" class="projects__detail">
+						<div class="projects__detail-image" style="background-image: url(assets/arrive-logistics-logo.png)"></div>
+					</div>
 					<div data-id="verb" class="projects__detail">
-						<div class="projects__detail--image" style="background-image: url(assets/verb-logo.png)">
-						</div>
+						<div class="projects__detail-image" style="background-image: url(assets/verb-logo.png)"></div>
 					</div>
 					<div data-id="pbc" class="projects__detail">
-						<div class="projects__detail--image" style="background-image: url(assets/pbc-logo-3.jpg)">
-						</div>
+						<div class="projects__detail-image" style="background-image: url(assets/pbc-logo.jpg)"></div>
 					</div>
 					<div data-id="fuel" class="projects__detail">
-						<div class="projects__detail--image" style="background-image: url(assets/fuel-logo.jpg)">
-						</div>
+						<div class="projects__detail-image" style="background-image: url(assets/fuel-logo.jpg)"></div>
 					</div>
 				</div>
 
-				<h1 class="projects__header">Angular</h1>
-				<div>
-					<div data-id="reddit" class="projects__detail">
-						<div class="projects__detail--image" style="background-image: url(assets/reddit2.jpg)">
+			<h1 class="projects__header">React Native</h1>
+			<div>
+				<div data-id="arrive-demo-app" class="projects__detail">
+					<div class="projects__detail-image" style="background-image: url(assets/arrive-demo-app.jpg)"></div>
+				</div>
+			</div>
+
+			<h1 class="projects__header">Vanilla Javascript</h1>
+			<div>
+				<div data-id="portfolio" class="projects__detail">
+					<div class="projects__detail-image" style="background-image: url(assets/rv-logo.jpg)"></div>
+				</div>
+				<div data-id="hangman" class="projects__detail">
+					<div class="projects__detail-image" style="background-image: url(assets/hangman.jpg)"></div>
+				</div>
+			</div>
+
+		</section>
+
+		<!-- react projects -->
+
+		<section class="process" id="arrive">
+			<a href="#projects" class="process__close"></a>
+			<div class="css-mb with-glare">
+	      <div class="mb-display-position">
+	        <div class="mb-display">
+	          <div class="mb-screen-position">
+	            <div class="mb-screen">
+								<img src="assets/arrive-demo-screenshot.png" alt="Arrive Demo Home Page" />
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="mb-body"></div>
+	      <div class="mb-bottom-cover"></div>
+	    </div>
+
+				<div class="project">
+
+					<div class="row project__title">
+						<div class="col-md-6">
+							<h3>Title</h3>
+		          <h4>Arrive Demo</h4>
+		          <h3>Role</h3>
+		          <h4>UI/FED</h4>
+		          <h3>Project Type</h3>
+		          <h4>Personal Project</h4>
+						</div>
+						<div class="col-md-6">
+							<h3>Technologies - Version 1</h3>
+							<ul class="process__project__title-technologies">
+								<li>React</li>
+								<li>Redux</li>
+							</ul>
+							<h3>Technologies - Version 2</h3>
+							<ul class="process__project__title-technologies">
+								<li>React</li>
+								<li>Apollo</li>
+								<li>GraphQL</li>
+								<li>Node</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row project__description">
+						<div class="col-md-6">
+							<h3 class="name">Description</h3>
+							<p>
+								A search box where a user can search for carriers by city name.
+							</p>
+						</div>
+						<div class="col-md-6">
+							<div class="project__title">
+								<h3>Links</h3>
+								<ul class="process__project__title-links">
+									<li><a class="process__project__title-links" href="https://github.com/rvarela11/arrive-logistics" target="_blank">Code V1</a></li>
+									<li><a class="process__project__title-links" href="https://github.com/rvarela11/arrive-logistics-GraphQL" target="_blank">Code V2</a></li>
+									<li><a class="process__project__title-links" href="http://robertvarela.com/arrive-logistics/" target="_blank">Site</a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
-
 		</section>
 
 		<section class="process" id="verb">
@@ -115,16 +189,10 @@
 						</div>
 						<div class="col-md-6">
 							<h3>Technologies</h3>
-							<ul class="process__project__title--technologies">
+							<ul class="process__project__title-technologies">
 								<li>React</li>
 								<li>Redux</li>
-								<li>Webpack</li>
-								<li>Babel</li>
-							</ul>
-							<h3>Links</h3>
-							<ul class="process__project__title--links">
-								<li><a class="process__project__title--links" href="https://github.com/rvarela11/verb-2" target="_blank">Code</a></li>
-								<li><a class="process__project__title--links" href="http://robertvarela.com/verb-2/" target="_blank">Site</a></li>
+								<li>Vanilla JavaScript</li>
 							</ul>
 						</div>
 					</div>
@@ -136,73 +204,15 @@
 							</p>
 						</div>
 						<div class="col-md-6">
-							<div class="project__description--overall">
-								<h3 class="name">Overall</h3>
-								<ul>
-		              <li>View all users for a specific group</li>
-		              <li>Search user by name</li>
-		              <li>Add user to any group</li>
-		            </ul>
+							<div class="project__title">
+								<h3>Links</h3>
+								<ul class="process__project__title-links">
+									<li><a class="process__project__title-links" href="https://github.com/rvarela11/verb-2" target="_blank">Code</a></li>
+									<li><a class="process__project__title-links" href="http://robertvarela.com/verb-2/" target="_blank">Site</a></li>
+								</ul>
 							</div>
 						</div>
 					</div>
-
-					<div class="project__process">
-						<hr data-content="Challenge">
-
-						<p class="process--mobile-view">Please check the process page on a desktop.</p>
-
-						<div class="row process--code">
-							<div class="project__process--challenge">
-								<div class="project__process--challenge-box col-md-6 col-sm-12">
-									<h3 class="name">Challenge</h3>
-									<h4>
-										Add a user to a specific group. When changed the user must only be found in the specific group. Their information must also change in the "all" group.
-									</h4>
-								</div>
-								<div class="project__process--challenge-box col-md-6 col-sm-12">
-									<h3 class="name">Site</h3>
-									<img class="project__process--challenge-box-img" src="assets/verb-add.png" alt="PBC Alumni Home Page" />
-								</div>
-							</div>
-						</div>
-
-						<div class="row process--code">
-							<div class="project__process--solution">
-								<div class="project__process--solution-box col-md-6 col-sm-12">
-									<h3 class="name">Solution</h3>
-									<h4>Each button has a click event listener that passes the user's object data.</h4>
-			            <h4>The <code class="code-highlight">user.group</code> value is stored in the <code class="code-highlight">group</code> constant.</h4>
-			            <h4>The correct <code class="code-highlight">group_array</code> is selected based on the <code class="code-highlight">group</code>.</h4>
-			            <h4>A <code class="code-highlight">map</code> function runs through the <code class="code-highlight">group_array</code> and removes the name which matches the <code class="code-highlight">user.first_name</code>.</h4>
-			            <h4>The <code class="code-highlight">user</code> is pushed into the new <code class="code-highlight">group_array</code>.</h4>
-								</div>
-								<div class="project__process--solution-box col-md-6 col-sm-12">
-									<h3 class="name">Code</h3>
-									<pre class="pre-code">
-										<span class="span-code"><span class="sc-purple">const</span> group = user.group;</span>
-			              <span class="span-code">let group_array;</span>
-			              <span class="span-code"></span>
-			              <span class="span-code">   <span class="sc-purple">if</span> (group === "<span class="sc-green">IT</span>") {</span>
-			              <span class="span-code">     group_array = <span class="sc-red">this</span>.state.it;</span>
-			              <span class="span-code">   } <span class="sc-purple">else if</span> (group === "<span class="sc-green">Sales</span>") {</span>
-			              <span class="span-code">     group_array = <span class="sc-red">this</span>.state.sales;</span>
-			              <span class="span-code">   } <span class="sc-purple">else if</span> (group === "<span class="sc-green">Support</span>") {</span>
-			              <span class="span-code">     group_array = <span class="sc-red">this</span>.state.support;</span>
-			              <span class="span-code">  }</span>
-			              <span class="span-code"></span>
-			              <span class="span-code">  group_array.<span class="sc-blue">map</span>((user_old) => {</span>
-			              <span class="span-code">  <span class="sc-purple">  if</span> (user_old.first_name === user.first_name ) {</span>
-			              <span class="span-code">      let user_index = group_array.<span class="sc-blue">indexOf</span>(user_old);</span>
-			              <span class="span-code">      group_array.<span class="sc-blue">splice</span>(user_index,1);</span>
-			              <span class="span-code">    }</span>
-			              <span class="span-code">  });</span>
-									</pre>
-								</div>
-							</div>
-						</div>
-					</div>
-
 				</div>
 		</section>
 
@@ -235,17 +245,9 @@
 						</div>
 						<div class="col-md-6">
 							<h3>Technologies</h3>
-							<ul class="process__project__title--technologies">
+							<ul class="process__project__title-technologies">
 								<li>React</li>
 								<li>Redux</li>
-								<li>JSX</li>
-								<li>Webpack</li>
-								<li>Babel</li>
-							</ul>
-							<h3>Links</h3>
-							<ul class="process__project__title--links">
-								<li><a class="process__project__title--links" href="https://github.com/rvarela11/pbc-2" target="_blank">Code</a></li>
-								<li><a class="process__project__title--links" href="http://pbcalumni.directory/" target="_blank">Site</a></li>
 							</ul>
 						</div>
 					</div>
@@ -257,108 +259,15 @@
 							</p>
 						</div>
 						<div class="col-md-6">
-							<div class="project__description--overall">
-								<h3 class="name">Overall</h3>
-								<ul>
-									<li>Create the Alumni, Company, and Admin pages</li>
-									<li>Filter by name and other options</li>
-									<li>Make API requests and display information</li>
+							<div class="project__title">
+								<h3>Links</h3>
+								<ul class="process__project__title-links">
+									<li><a class="process__project__title-links" href="https://github.com/rvarela11/pbc-2" target="_blank">Code</a></li>
+									<li><a class="process__project__title-links" href="http://pbcalumni.directory/" target="_blank">Site</a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
-
-					<div class="project__process">
-						<hr data-content="Challenge">
-
-						<p class="process--mobile-view">Please check the process page on a desktop.</p>
-
-						<div class="row process--code">
-							<div class="project__process--challenge">
-								<div class="project__process--challenge-box col-md-6 col-sm-12">
-									<h3 class="name">Challenge</h3>
-									<h4>
-									Step 1: Collect the filter options and make a POST request.
-									</h4>
-									<h4>
-									Step 2: Receive results and properly display the information.
-									</h4>
-								</div>
-								<div class="project__process--challenge-box col-md-6 col-sm-12">
-									<h3 class="name">Site</h3>
-									<img class="project__process--challenge-box-img" src="assets/pbc-filters.png" alt="PBC Alumni Home Page" />
-								</div>
-							</div>
-						</div>
-
-						<div class="row process--code">
-							<div class="project__process--solution">
-								<div class="project__process--solution-box col-md-6 col-sm-12">
-									<h3 class="name">Solution</h3>
-									<h4>* For display purposes, these code snippets only show partial code. For the full code please visit <a class="code-links" href="https://github.com/PatriotBootCamp/alumni" target="_blank">here</a>.</h4>
-									<h4>Step 1</h4>
-									<h4>Each filter, has an <code class="code-highlight">onChange</code> EventListener that runs the <code class="code-highlight">checkboxAnswer</code> function.  </h4>
-									<h4>The checkbox's name, value, and checked status are placed in constants. Along with the object of arrays that is set in the initial state and an array of strings that will act as the function's filters. </h4>
-									<h4>A <code class="code-highlight">forEach</code> loop runs through the <code class="code-highlight">filterProperties</code> to match the chexbox's name with the filter. If both of them match and the checked status is true, the value of the checked box will be pushed into it's array. If they both match but the checked status is false, the last value in the array will be removed. This is done so the arrays do not have any duplicates.</h4>
-									<h4>Once the user clicks the <code class="code-highlight">SEARCH</code> button, the <code class="code-highlight">dropdown_filter_arrays</code> object is passed to the back-end through a <code class="code-highlight">POST</code> request. </h4>
-								</div>
-								<div class="project__process--solution-box col-md-6 col-sm-12">
-									<h3 class="name">Code</h3>
-									<pre class="pre-code">
-										<span class="span-code">checkboxAnswer (<span class="sc-orange">event</span>) {</span>
-										<span class="span-code"><span class="sc-purple">const</span> <span class="sc-orange">checkboxName</span> = event.target.name;</span>
-										<span class="span-code"><span class="sc-purple">const</span> <span class="sc-orange">checkboxValue</span> = event.target.value;</span>
-										<span class="span-code"><span class="sc-purple">const</span> <span class="sc-orange">checkboxChecked</span> = event.target.checked;</span>
-										<span class="span-code"><span class="sc-purple">const</span> <span class="sc-orange">dropdown_filter_arrays</span> = <span class="sc-red">this</span>.state.dropdown_filter_arrays;</span>
-										<span class="span-code"><span class="sc-purple">const</span> <span class="sc-orange">filterProperties</span> = ["<span class="sc-green">techstars</span>"];</span>
-											<span class="span-code"> filterProperties.<span class="sc-blue">forEach</span>((<span class="sc-orange">filterBy</span>) <span class="sc-purple">=></span> {</span>
-											<span class="span-code">  <span class="sc-purple">if</span> (<span class="sc-orange">filterBy</span> === <span class="sc-orange">checkboxName</span> && <span class="sc-orange">checkboxChecked</span>){</span>
-												<span class="span-code">   <span class="sc-purple">if</span> (<span class="sc-orange">filterBy</span> === "<span class="sc-green">techstars</span>") {</span>
-												<span class="span-code">    dropdown_filter_arrays.techstars.<span class="sc-blue">push</span>(<span class="sc-orange">checkboxValue</span>);</span>
-												<span class="span-code">    <span class="sc-red">this</span>.<span class="sc-blue">setState</span>({dropdown_filter_arrays});</span>
-												<span class="span-code">   }</span>
-											<span class="span-code"> } <span class="sc-purple">else if</span> (<span class="sc-orange">filterBy</span> === <span class="sc-orange">checkboxName</span> && !<span class="sc-orange">checkboxChecked</span>){</span>
-											<span class="span-code">   <span class="sc-purple">if</span> (<span class="sc-orange">filterBy</span> === "<span class="sc-green">techstars</span>"){</span>
-												<span class="span-code">    dropdown_filter_arrays.techstars.<span class="sc-blue">splice</span>(<span class="sc-orange">-1</span>,<span class="sc-orange">1</span>);</span>
-												<span class="span-code">    <span class="sc-red">this</span>.<span class="sc-blue">setState</span>({dropdown_filter_arrays});</span>
-											<span class="span-code">   }</span>
-											<span class="span-code">  }</span>
-											<span class="span-code"> })</span>
-										<span class="span-code">}</span>
-									</pre>
-								</div>
-							</div>
-						</div>
-
-						<div class="row process--code">
-							<div class="project__process--solution">
-								<div class="project__process--solution-box col-md-6 col-sm-12">
-									<h3 class="name">Solution</h3>
-									<h4>Step 2</h4>
-									<h4>An object is returned with the results. A <code class="code-highlight">map</code> function runs through the object and the proper information is displayed. </h4>
-								</div>
-								<div class="project__process--solution-box col-md-6 col-sm-12">
-									<h3 class="name">Code</h3>
-									<pre class="pre-code">
-									<span class="span-code"><span class="sc-orange">{</span>founders.<span class="sc-blue">map</span>((<span class="sc-orange">info</span>, <span class="sc-orange">index</span>) <span class="sc-purple">=></span> {</span>
-										<span class="span-code"><span class="sc-purple"> return</span> (</span>
-										<span class="span-code">  &lt;<span class="sc-red">div</span> <span class="sc-purple">className</span>="<span class="sc-green">col s12 m7 card-outline</span>"></span>
-											<span class="span-code">   &lt;<span class="sc-red">div</span> <span class="sc-purple">className</span>="<span class="sc-green">card horizontal</span>"></span>
-											<span class="span-code">    &lt;<span class="sc-red">div</span> <span class="sc-purple">className</span>="<span class="sc-green">card-image</span>"></span>
-												<span class="span-code">     &lt;<span class="sc-red">img</span> <span class="sc-purple">src</span>="<span class="sc-green">../images/empty_avatar.jpg</span>" <span class="sc-purple">className</span>="<span class="sc-green">card-img</span>"/></span>
-											<span class="span-code">    &lt;/<span class="sc-red">div</span>></span>
-											<span class="span-code">     &lt;<span class="sc-red">div</span> <span class="sc-purple">className</span>="<span class="sc-green">card-stacked</span>"></span>
-												<span class="span-code">    &lt;<span class="sc-red">div</span> <span class="sc-purple">className</span>="<span class="sc-green">card-content card-div-li</span>"></span>
-												<span class="span-code">   &lt;<span class="sc-red">ul</span> <span class="sc-purple">className</span>="<span class="sc-green">card-ul</span>"></span>
-													<span class="span-code">&lt;<span class="sc-red">div</span> <span class="sc-purple">className</span>="<span class="sc-green">card-div-li</span>"></span>
-													<span class="span-code">&lt;<span class="sc-red">li</span>>&lt;<span class="sc-red">h4</span> <span class="sc-purple">className</span>="<span class="sc-green">card-h4</span>"><span class="sc-orange">{</span>info.first_name<span class="sc-orange">}</span>&lt;/<span class="sc-red">h4</span>>&lt;/<span class="sc-red">li</span>></span>
-													<span class="span-code">&lt;<span class="sc-red">li</span>>&lt;<span class="sc-red">h4</span> <span class="sc-purple">className</span>="<span class="sc-green">card-h4 card-h4-last-name</span>"><span class="sc-orange">{</span>info.last_name<span class="sc-orange">}</span>&lt;/<span class="sc-red">h4</span>>&lt;/<span class="sc-red">li</span>></span>
-									</pre>
-								</div>
-							</div>
-						</div>
-					</div>
-
 				</div>
 		</section>
 
@@ -369,7 +278,7 @@
 	        <div class="mb-display">
 	          <div class="mb-screen-position">
 	            <div class="mb-screen">
-								<img src="assets/fuel-react-frontpage.png" alt="Fuel Home Page" />
+								<img src="assets/fuel-screenshot.png" alt="Fuel Home Page" />
 	            </div>
 	          </div>
 	        </div>
@@ -391,16 +300,12 @@
 					</div>
 					<div class="col-md-6">
 						<h3>Technologies</h3>
-						<ul class="process__project__title--technologies">
+						<ul class="process__project__title-technologies">
 							<li>React</li>
 	            <li>Redux</li>
-	            <li>JSX</li>
+							<li>Vanilla JavaScript</li>
 	            <li>nutritionix(API)</li>
-						</ul>
-						<h3>Links</h3>
-						<ul class="process__project__title--links">
-							<li><a class="process__project__title--links" href="https://github.com/rvarela11/fuel-react" target="_blank">Code</a></li>
-							<li><a class="process__project__title--links" href="http://fuel.surge.sh/" target="_blank">Site</a></li>
+							<li>Materialize</li>
 						</ul>
 					</div>
 				</div>
@@ -408,109 +313,32 @@
 					<div class="col-md-6">
 						<h3 class="name">Description</h3>
 						<p>
-							Fuel helps you compare your goal calories vs your daily calories in three simple steps. The first step is to get your goal calories. This is calculated by collecting some general information. The second step is to get your daily calories. This is calculated by searching food items and placing them in a breakfast, lunch, or dinner box. The third step will give you a breakdown.
+							Fuel helps you compare your goal calories vs your daily calories in three simple steps. The first step is to get your goal calories. The second step is to get your daily calories. The third step will give you a breakdown.
 						</p>
 					</div>
 					<div class="col-md-6">
-						<div class="project__description--overall">
-							<h3 class="name">Overall</h3>
-							<ul>
-              	<li>Provide a smooth user experience. One specific case where this is done is on the step 2 page. The option box changes views when a user clicks on the different tab buttons.</li>
-              	<li>Provide a smooth user interface. This can be found on the goal and daily calories counter. When a user completes step 1 and/or 2, the counter is instantly updated. This is done through redux.</li>
-              	<li>Make the application mobile friendly. </li>
-            	</ul>
+						<div class="project__title">
+							<h3>Links</h3>
+							<ul class="process__project__title-links">
+								<li><a class="process__project__title-links" href="https://github.com/rvarela11/fuel-react" target="_blank">Code</a></li>
+								<li><a class="process__project__title-links" href="http://fuel.surge.sh/" target="_blank">Site</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
-
-				<div class="project__process">
-					<hr data-content="Challenge">
-
-					<p class="process--mobile-view">Please check the process page on a desktop.</p>
-
-					<div class="row process--code">
-						<div class="project__process--challenge">
-							<div class="project__process--challenge-box col-md-6">
-								<h3 class="name">Challenge</h3>
-								<h4>
-									Be able to pass the calories data for the specific item clicked to calculate the daily calories.
-								</h4>
-							</div>
-							<div class="project__process--challenge-box col-md-6">
-								<h3 class="name">Site</h3>
-								<img class="project__process--challenge-box-img" src="assets/fuel-react-step2.png" alt="Fuel Step 2 Page" />
-							</div>
-						</div>
-					</div>
-
-					<div class="row process--code">
-						<div class="project__process--solution">
-							<div class="project__process--solution-box col-md-6">
-								<h3 class="name">Solution</h3>
-								<h4>
-		              To solve this, I compiled the data into an array and passed the needed object on every onClick event in the results list.
-		            </h4>
-		            <h4>
-		              The result from the API call is passed through the renderResultList function. Two map functions run to extract the data needed. This data is placed in two different constants. An empty object named <code class="code-highlight">results</code> is also created.
-		            </h4>
-		            <h4>
-		              A map function runs through the <code class="code-highlight">itemsArray</code> array which builds the data for the <code class="code-highlight">results</code> object.
-		            </h4>
-		            <h4>
-		              The <code class="code-highlight">results</code> object keys are placed in a constant in order to run a map function through it. This returns an array which is stored in the <code class="code-highlight">foodItems</code> constant. This array will pass the object needed on every onClick event in the results list.
-		            </h4>
-							</div>
-							<div class="project__process--solution-box col-md-6">
-								<h3 class="name">Code</h3>
-								<pre class="pre-code">
-		              <span class="span-code"><span class="sc-blue">renderResultList</span><span class="sc-white">(</span><span class="sc-orange">listData</span><span class="sc-white">)</span> <span class="sc-white">{</span></span>
-		              <span class="span-code">  <span class="sc-purple">const</span> <span class="sc-white">itemsArray = listData.hits.</span><span class="sc-blue">map</span><span class="sc-white">(</span><span class="sc-orange">item</span> <span class="sc-purple">=></span> <span class="sc-white">item.fields.item_name.</span><span class="sc-blue">split</span><span class="sc-white">("</span><span class="sc-green"> - </span><span class="sc-white">")[</span><span class="sc-orange">0</span><span class="sc-white">]);</span></span>
-		              <span class="span-code">  <span class="sc-purple">const</span> caloriesArray = listData.hits.<span class="sc-blue">map</span>(<span class="sc-orange">item</span> <span class="sc-purple">=></span> item.fields.nf_calories);</span>
-		              <span class="span-code">  <span class="sc-purple">const</span> results = {};</span>
-		              <span class="span-code"></span>
-		              <span class="span-code">  itemsArray.<span class="sc-blue">map</span>((<span class="sc-orange">item</span>,<span class="sc-orange">index</span>) <span class="sc-purple"><span class="sc-purple">=></span></span> {</span>
-		              <span class="span-code">    <span class="sc-purple">if</span>(results.<span class="sc-blue">hasOwnProperty</span>(item)){</span>
-		              <span class="span-code">    results[item].calories.<span class="sc-blue">push</span>(caloriesArray[index]);</span>
-		              <span class="span-code">    } <span class="sc-purple">else</span> {</span>
-		              <span class="span-code">    results[item] = {};</span>
-		              <span class="span-code">    results[item].calories = [];</span>
-		              <span class="span-code">    results[item].calories.<span class="sc-blue">push</span>(caloriesArray[index]);</span>
-		              <span class="span-code">    }</span>
-		              <span class="span-code">  });</span>
-		              <span class="span-code"></span>
-		              <span class="span-code">  <span class="sc-purple">const</span> resultsNames = <span class="sc-yellow">Object</span>.<span class="sc-blue">keys</span>(results);</span>
-		              <span class="span-code">  <span class="sc-purple">const</span> foodItems = resultsNames.<span class="sc-blue">map</span>((<span class="sc-orange">foodName</span>,<span class="sc-orange">index</span>) <span class="sc-purple">=></span> {</span>
-		              <span class="span-code">    <span class="sc-purple">return</span> {name: foodName, calories: results[foodName].calories[<span class="sc-orange">0</span>]};</span>
-		              <span class="span-code">  });</span>
-		              <span class="span-code"></span>
-		              <span class="span-code">  <span class="sc-purple">return</span> &lt;div></span>
-		              <span class="span-code">    &lt;ul></span>
-		              <span class="span-code">      {foodItems.<span class="sc-blue">map</span>((<span class="sc-orange">item</span>) <span class="sc-purple">=></span> {</span>
-		              <span class="span-code">        <span class="sc-purple">const</span> displayInfo = <span class="sc-green">`</span><span class="sc-orange">${</span>item.name<span class="sc-orange">}</span> <span class="sc-green">=</span> <span class="sc-orange">${</span>item.calories<span class="sc-orange">}</span><span class="sc-green">`</span>;</span>
-		              <span class="span-code">          <span class="sc-purple">return</span> &lt;li key={displayInfo} onClick={()<span class="sc-purple">=></span> <span class="sc-red">this</span>.<span class="sc-blue">handleCheckboxChange</span>(item)}></span>
-		              <span class="span-code">            {displayInfo}</span>
-		              <span class="span-code">          &lt;/li></span>
-		              <span class="span-code">      })}</span>
-		              <span class="span-code">    &lt;/ul></span>
-		              <span class="span-code">  &lt;/div></span>
-		              <span class="span-code">}</span>
-		            </pre>
-							</div>
-						</div>
-					</div>
-				</div>
-
 			</div>
 		</section>
 
-		<section class="process" id="reddit">
+		<!-- react native projects -->
+
+		<section class="process" id="arrive-demo-app">
 			<a href="#projects" class="process__close"></a>
 			<div class="css-mb with-glare">
 	      <div class="mb-display-position">
 	        <div class="mb-display">
 	          <div class="mb-screen-position">
 	            <div class="mb-screen">
-								<img src="assets/reddit-angular-home.png" alt="Reddit Clone Home Page" />
+								<img src="assets/arrive-demo-app-screenshot.png" alt="Arrive Demo App Home Page" />
 	            </div>
 	          </div>
 	        </div>
@@ -519,235 +347,154 @@
 	      <div class="mb-bottom-cover"></div>
 	    </div>
 
-			<div class="project">
+				<div class="project">
 
-				<div class="row project__title">
-					<div class="col-md-6">
-						<h3>Title</h3>
-	          <h4>Reddit Clone</h4>
-	          <h3>Role</h3>
-	          <h4>UI/FED</h4>
-	          <h3>Project Type</h3>
-	          <h4>Personal Project</h4>
+					<div class="row project__title">
+						<div class="col-md-6">
+							<h3>Title</h3>
+		          <h4>Arrive Demo App</h4>
+		          <h3>Role</h3>
+		          <h4>UI/FED</h4>
+		          <h3>Project Type</h3>
+		          <h4>Work Project</h4>
+						</div>
+						<div class="col-md-6">
+							<h3>Technologies</h3>
+							<ul class="process__project__title-technologies">
+								<li>React Native</li>
+								<li>Redux</li>
+							</ul>
+						</div>
 					</div>
-					<div class="col-md-6">
-						<h3>Technologies</h3>
-						<ul class="process__project__title--technologies">
-							<li>Angular</li>
-	            <li>Express</li>
-	            <li>Knex</li>
-	            <li>PostgreSQL</li>
-						</ul>
-						<h3>Links</h3>
-						<ul class="process__project__title--links">
-							<li><a class="process__project__title--links" href="https://github.com/rvarela11/reddit-clone-angular-CRUD" target="_blank">Code</a></li>
-							<li><a class="process__project__title--links" href="https://robert-angular-reddit-clone.herokuapp.com/#/" target="_blank">Site</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="row project__description">
-					<div class="col-md-6">
-						<h3 class="name">Description</h3>
-						<p>
-							This was the second version of this application. You can find the first version here ( <a href="https://github.com/rvarela11/reddit_clone_2" target="_blank">Code</a> | <a href="https://reddit-clone-2.herokuapp.com/" target="_blank">Site</a> ).
-						</p>
-					</div>
-					<div class="col-md-6">
-						<div class="project__description--overall">
-							<h3 class="name">Overall</h3>
-							<ul>
-								<li>Create a full CRUD application using Angular</li>
-              	<li>Apply Angular directives such as ngMessages and ngAnimate.</li>
-            	</ul>
+					<div class="row project__description">
+						<div class="col-md-6">
+							<h3 class="name">Description</h3>
+							<p>
+								A mobile application that allows users to upload and edit a document.
+							</p>
+						</div>
+						<div class="col-md-6">
+							<div class="project__title">
+								<h3>Links</h3>
+								<ul class="process__project__title-links">
+									<li><a class="process__project__title-links" href="https://github.com/rvarela11/arrive-mobile-app-demo" target="_blank">Code</a></li>
+									<li><a class="process__project__title-links" href="" target="_blank">-</a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
+		</section>
 
-				<div class="project__process">
-					<hr data-content="Challenge">
+		<!-- vanilla javascript projects-->
 
-					<p class="process--mobile-view">Please check the process page on a desktop.</p>
+		<section class="process" id="portfolio">
+			<a href="#projects" class="process__close"></a>
+			<div class="css-mb with-glare">
+	      <div class="mb-display-position">
+	        <div class="mb-display">
+	          <div class="mb-screen-position">
+	            <div class="mb-screen">
+								<img src="assets/portfolio-screenshot.png" alt="Portfolio Home Page" />
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="mb-body"></div>
+	      <div class="mb-bottom-cover"></div>
+	    </div>
 
-					<div class="row process--code">
-						<div class="project__process--challenge">
-							<div class="project__process--challenge-box col-md-6">
-								<h3 class="name">Challenge</h3>
-								<h4>
-									How to successfully be able to edit a specific post. Be able to pass information from the view, to the controller, to making an HTTP request, and back with a responds to the controller.
-								</h4>
-							</div>
-							<div class="project__process--challenge-box col-md-6">
-								<h3>Site</h3>
-								<img class="project__process--challenge-box-img" src="assets/reddit-angular-edit-post.png" alt="Fuel Step 2 Page" />
+				<div class="project">
+
+					<div class="row project__title">
+						<div class="col-md-6">
+							<h3>Title</h3>
+		          <h4>Portfolio</h4>
+		          <h3>Role</h3>
+		          <h4>UI/FED</h4>
+		          <h3>Project Type</h3>
+		          <h4>Personal Project</h4>
+						</div>
+						<div class="col-md-6">
+							<h3>Technologies</h3>
+							<ul class="process__project__title-technologies">
+								<li>Vanilla Javascript</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row project__description">
+						<div class="col-md-6">
+							<h3 class="name">Description</h3>
+							<p>
+								Portfolio done in vanilla javascript that acts like a single page application.
+							</p>
+						</div>
+						<div class="col-md-6">
+							<div class="project__title">
+								<h3>Links</h3>
+								<ul class="process__project__title-links">
+									<li><a class="process__project__title-links" href="https://github.com/rvarela11/rvarela11.github.io" target="_blank">Code</a></li>
+									<li><a class="process__project__title-links" href="http://robertvarela.com" target="_blank">Site</a></li>
+								</ul>
 							</div>
 						</div>
 					</div>
-
-					<div class="row process--code">
-						<div class="project__process--solution">
-							<div class="project__process--solution-box col-md-6">
-								<h3 class="name">Solution</h3>
-								<h4>1: View</h4>
-		            <h4>
-		              The form tag has an <code class="code-highlight">ng-submit</code> with the function <code class="code-highlight">editPost</code>. This function will be passed on to the controller with two arguments ( <code class="code-highlight">$event</code> and  <code class="code-highlight">post.id</code>). The <code class="code-highlight">post.id</code> is the post id for that specific post.
-		            </h4>
-		            <h4>
-		              Each input tag has an <code class="code-highlight">ng-model</code> for a specific value. These values will be passed and placed in the <code class="code-highlight">$scope.views.userForm</code> object in the controller once the submit input is clicked.
-		            </h4>
-							</div>
-							<div class="project__process--solution-box col-md-6">
-								<h3 class="name">Code</h3>
-								<pre class="pre-code">
-		              <span class="span-code">&lt;<span class="sc-red">div</span>></span>
-		                <span class="span-code"> &lt;<span class="sc-red">h3</span>>Edit Post&lt;/<span class="sc-red">h3</span>></span>
-		                <span class="span-code"> &lt;<span class="sc-red">form</span> <span class="sc-purple">action</span>="<span class="sc-green">#</span>" <span class="sc-purple">name</span>="<span class="sc-green">editPostForm</span>" <span class="sc-purple">ng-submit</span>="<span class="sc-green">editPost($event, post.id)</span>" <span class="sc-purple">novalidate</span>></span>
-		                  <span class="span-code">  &lt;<span class="sc-red">input </span> <span class="sc-purple">type</span>="<span class="sc-green">text</span>" <span class="sc-purple">name</span>="<span class="sc-green">title</span>" <span class="sc-purple">ng-model</span>="<span class="sc-green">views.userForm.title</span>" <span class="sc-purple">placeholder</span>="<span class="sc-green">Title</span>"/></span>
-		                  <span class="span-code">  &lt;<span class="sc-red">input </span> <span class="sc-purple">type</span>="<span class="sc-green">text</span>" <span class="sc-purple">name</span>="<span class="sc-green">author</span>" <span class="sc-purple">ng-model</span>="<span class="sc-green">views.userForm.author</span>" <span class="sc-purple">placeholder</span>="<span class="sc-green">Author</span>"/></span>
-		                  <span class="span-code">  &lt;<span class="sc-red">input </span> <span class="sc-purple">type</span>="<span class="sc-green">text</span>" <span class="sc-purple">name</span>="<span class="sc-green">description</span>" <span class="sc-purple">ng-model</span>="<span class="sc-green">views.userForm.description</span>" <span class="sc-purple">placeholder</span>="<span class="sc-green">Description</span>"/></span>
-		                  <span class="span-code">  &lt;<span class="sc-red">input </span> <span class="sc-purple">type</span>="<span class="sc-green">submit</span>" <span class="sc-purple">value</span>="<span class="sc-green">Submit</span>"/></span>
-		                <span class="span-code"> &lt;/<span class="sc-red">form</span>></span>
-		              <span class="span-code">&lt;/<span class="sc-red">div</span>></span>
-		            </pre>
-							</div>
-						</div>
-					</div>
-
-					<div class="row process--code">
-						<div class="project__process--solution">
-							<div class="project__process--solution-box col-md-6">
-								<h3 class="name"></h3>
-								<h4>2: Controller</h4>
-		            <h4>
-		              The <code class="code-highlight">MainController</code> controller is injected with <code class="code-highlight">$scope</code> and <code class="code-highlight">firstService</code>. The <code class="code-highlight">$scope.views.userForm</code> object is created with empty values. Here is where the values from the <code class="code-highlight">editPostForm</code> form will be placed.
-		            </h4>
-		            <h4>
-		              The function <code class="code-highlight">editPost</code> will pass the information from the <code class="code-highlight">$scope.views.userForm</code> object and the <code class="code-highlight">post.id</code> to the <code class="code-highlight">firstService</code> factory.
-		            </h4>
-							</div>
-							<div class="project__process--solution-box col-md-6">
-								<h3></h3>
-								<pre class="pre-code">
-		              <span class="span-code">app.<span class="sc-blue">controller</span>('<span class="sc-green">MainController</span>', ['<span class="sc-green">$scope</span>', '<span class="sc-green">firstService</span>', <span class="sc-purple">function</span>(<span class="sc-orange">$scope</span>,</span>
-		              <span class="span-code">  <span class="sc-orange">firstService</span>) {</span>
-		              <span class="span-code">  <span class="sc-orange">$scope</span>.views = {};</span>
-		              <span class="span-code">  <span class="sc-orange">$scope</span>.views.userForm = {</span>
-		              <span class="span-code">    <span class="sc-green">title</span>: "",</span>
-		              <span class="span-code">    <span class="sc-green">author</span>: "",</span>
-		              <span class="span-code">    <span class="sc-green">description</span>: "",</span>
-		              <span class="span-code">    <span class="sc-green">votes</span>: <span class="sc-orange">0</span></span>
-		              <span class="span-code">  };</span>
-		              <span class="span-code"></span>
-		              <span class="span-code">  <span class="sc-orange">$scope</span>.<span class="sc-blue">editPost</span> = <span class="sc-purple">function</span>(<span class="sc-orange">event</span>, <span class="sc-orange">post.id</span>) {</span>
-		              <span class="span-code">    event.<span class="sc-blue">preventDefault</span>();</span>
-		              <span class="span-code">    firstService.<span class="sc-blue">edit</span>($scope.views.userForm, post.id);</span>
-		              <span class="span-code">  }</span>
-		              <span class="span-code"></span>
-		              <span class="span-code">}]);</span>
-		            </pre>
-							</div>
-						</div>
-					</div>
-
-					<div class="row process--code">
-						<div class="project__process--solution">
-							<div class="project__process--solution-box col-md-6">
-								<h3 class="name"></h3>
-								<h4>3: Factory</h4>
-		            <h4>
-		              The <code class="code-highlight">firstService</code> factory is injected with <code class="code-highlight">$http</code>. The edit function runs making a <code class="code-highlight">put</code> request and passing the <code class="code-highlight">userForm</code> object along with the <code class="code-highlight">post.id</code> id.
-		            </h4>
-							</div>
-							<div class="project__process--solution-box col-md-6">
-								<h3 class="name"></h3>
-								<pre class="pre-code">
-		              <span class="span-code">app.<span class="sc-blue">factory</span>('<span class="sc-green">firstService</span>', <span class="sc-purple">function</span>(<span class="sc-orange">$http</span>) {</span>
-		              <span class="span-code"></span>
-		              <span class="span-code">  <span class="sc-purple">return</span> {</span>
-		              <span class="span-code">    <span class="sc-blue">edit</span>: <span class="sc-purple">function</span>(<span class="sc-orange">userForm</span>, <span class="sc-orange">post.id</span>) {</span>
-		              <span class="span-code">      <span class="sc-purple">return</span> <span class="sc-orange">$http</span>.<span class="sc-blue">put</span>('<span class="sc-green">/api/posts/</span>' + post.id, userForm);</span>
-		              <span class="span-code">    }</span>
-		              <span class="span-code">});</span>
-		            </pre>
-							</div>
-						</div>
-					</div>
-
-					<div class="row process--code">
-						<div class="project__process--solution">
-							<div class="project__process--solution-box col-md-6">
-								<h3 class="name"></h3>
-								<h4>4: Route</h4>
-		            <h4>
-		              <code class="code-highlight">Express</code>, <code class="code-highlight">Router</code>, and <code class="code-highlight">Knex</code> are required.
-		            </h4>
-		            <h4>
-		              The <code class="code-highlight">put</code> request runs and a <code class="code-highlight">knex</code> call is made to select all posts from the <code class="code-highlight">posts</code> table that match the <code class="code-highlight">req.params.id</code> which in this case will be the <code class="code-highlight">post.id</code>. The <code class="code-highlight">title</code>, <code class="code-highlight">author</code>, <code class="code-highlight">description</code>, and <code class="code-highlight">votes</code> are updated with the information from the <code class="code-highlight">userForm</code> object.
-		            </h4>
-		            <h4>
-		              Lastly, a <code class="code-highlight">res.json(msg)</code> is returned which will be passed to the <code class="code-highlight">MainController</code> controller.
-		            </h4>
-							</div>
-							<div class="project__process--solution-box col-md-6">
-								<h3 class="name"></h3>
-								<pre class="pre-code">
-		              <span class="span-code"><span class="sc-purple">var</span> express = <span class="sc-blue">require</span>('<span class="sc-green">express</span>'),</span>
-		              <span class="span-code">  router = express.<span class="sc-blue">Router</span>(),</span>
-		              <span class="span-code">  knex = <span class="sc-blue">require</span>('<span class="sc-green">../db/knex</span>');</span>
-		              <span class="span-code"></span>
-		              <span class="span-code">router.<span class="sc-blue">put</span>('<span class="sc-green">/:id</span>', <span class="sc-purple">function</span>(<span class="sc-orange">req</span>, <span class="sc-orange">res</span>) {</span>
-		              <span class="span-code">  <span class="sc-blue">knex</span>('<span class="sc-green">posts</span>').<span class="sc-blue">where</span>({</span>
-		              <span class="span-code">    <span class="sc-green">id</span>: req.params.id</span>
-		              <span class="span-code">  }).<span class="sc-blue">update</span>({</span>
-		              <span class="span-code">    <span class="sc-green">title</span>: req.body.title,</span>
-		              <span class="span-code">    <span class="sc-green">author</span>: req.body.author,</span>
-		              <span class="span-code">    <span class="sc-green">description</span>: req.body.description,</span>
-		              <span class="span-code">    <span class="sc-green">votes</span>: <span class="sc-orange">0</span></span>
-		              <span class="span-code">  }).<span class="sc-blue">then</span>(<span class="sc-purple">function</span>(<span class="sc-orange">msg</span>) {</span>
-		              <span class="span-code">    res.<span class="sc-blue">json</span>(msg);</span>
-		              <span class="span-code">  });</span>
-		              <span class="span-code">});</span>
-		              <span class="span-code"></span>
-		              <span class="span-code">module.<span class="sc-yellow">exports</span> = router;</span>
-		            </pre>
-							</div>
-						</div>
-					</div>
-
-					<div class="row process--code">
-						<div class="project__process--solution">
-							<div class="project__process--solution-box col-md-6">
-								<h3 class="name"></h3>
-								<h4>5: View</h4>
-		            <h4>
-		              The <code class="code-highlight">res.json(msg)</code> is received and passed as an argument (<code class="code-highlight">msg</code>).
-		            </h4>
-		            <h4>
-		              The <code class="code-highlight">$scope.views.userForm</code> object is cleared out and the <code class="code-highlight">getPosts</code> function is triggered. This function will "reload" the posts so that the new edited information will show.
-		            </h4>
-							</div>
-							<div class="project__process--solution-box col-md-6">
-								<h3 class="name"></h3>
-								<pre class="pre-code">
-		              <span class="span-code">  <span class="sc-orange">$scope</span>.<span class="sc-blue">editPost</span> = <span class="sc-purple">function</span>(<span class="sc-orange">event</span>, <span class="sc-orange">id</span>) {</span>
-		              <span class="span-code">    event.<span class="sc-blue">preventDefault</span>();</span>
-		              <span class="span-code">    firstService.<span class="sc-blue">edit</span>($scope.views.userForm, id).<span class="sc-blue">then</span>(<span class="sc-purple">function</span>(<span class="sc-orange">msg</span>) {</span>
-		              <span class="span-code">      <span class="sc-orange">$scope</span>.views.userForm = {</span>
-		              <span class="span-code">        <span class="sc-green">title</span>: "",</span>
-		              <span class="span-code">        <span class="sc-green">author</span>: "",</span>
-		              <span class="span-code">        <span class="sc-green">description</span>: "",</span>
-		              <span class="span-code">        <span class="sc-green">votes</span>: <span class="sc-orange">0</span></span>
-		              <span class="span-code">      };</span>
-		              <span class="span-code">      <span class="sc-orange">$scope</span>.<span class="sc-blue">getPosts</span>();</span>
-		              <span class="span-code">    });</span>
-		              <span class="span-code">  }</span>
-		            </pre>
-							</div>
-						</div>
-					</div>
-
 				</div>
+		</section>
 
-			</div>
+		<section class="process" id="hangman">
+			<a href="#projects" class="process__close"></a>
+			<div class="css-mb with-glare">
+	      <div class="mb-display-position">
+	        <div class="mb-display">
+	          <div class="mb-screen-position">
+	            <div class="mb-screen">
+								<img src="assets/hangman-screenshot.png" alt="Hangman Home Page" />
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="mb-body"></div>
+	      <div class="mb-bottom-cover"></div>
+	    </div>
+
+				<div class="project">
+
+					<div class="row project__title">
+						<div class="col-md-6">
+							<h3>Title</h3>
+		          <h4>Hangman</h4>
+		          <h3>Role</h3>
+		          <h4>UI/FED</h4>
+		          <h3>Project Type</h3>
+		          <h4>Personal Project</h4>
+						</div>
+						<div class="col-md-6">
+							<h3>Technologies</h3>
+							<ul class="process__project__title-technologies">
+								<li>Vanilla Javascript</li>
+								<li>iTunes API</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row project__description">
+						<div class="col-md-6">
+							<h3 class="name">Description</h3>
+							<p>
+								Traditional hangman with a music twist. Guess the name of the artist. You can also listen to a 30 second music clip for a clue.
+							</p>
+						</div>
+						<div class="col-md-6">
+							<div class="project__title">
+								<h3>Links</h3>
+								<ul class="process__project__title-links">
+									<li><a class="process__project__title-links" href="https://github.com/rvarela11/hangman" target="_blank">Code</a></li>
+									<li><a class="process__project__title-links" href="http://robertvarela.com/hangman/" target="_blank">Site</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
 		</section>
 
 		<script type="text/javascript" src="js/main.js"></script>
