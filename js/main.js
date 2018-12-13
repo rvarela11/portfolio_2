@@ -2,9 +2,11 @@
 const all_sections = document.querySelectorAll("section");
 const all_projects_detail = document.querySelectorAll(".projects__detail");
 
-function displayProject () {
+function displayProject() {
   const project_data_id = this.dataset.id;
-  const filters = ["arrive", "verb", "pbc", "fuel", "portfolio", "arrive-demo-app", "hangman"];
+  const filters = ["silvercar", "verb", "pbc", "fuel", "portfolio",
+    "arrive-demo-app", "hangman"
+  ];
 
   filters.forEach((filter) => {
     if (project_data_id === filter) {
@@ -19,13 +21,13 @@ function displayProject () {
 }
 
 all_projects_detail.forEach((project) => {
-    project.addEventListener("click", displayProject);
+  project.addEventListener("click", displayProject);
 });
 
 // Close Process Project
 const all_process_close = document.querySelectorAll(".process__close");
 
-function closeProject () {
+function closeProject() {
   all_sections.forEach((section) => {
     const section_class = section.classList.value;
     if (section_class !== "process") {
