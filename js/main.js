@@ -144,7 +144,7 @@ const createProjectsSection = () => {
   // 1. Create the 'Projects' header
   const section_projects__title = document.createElement('div');
   section_projects__title.setAttribute("class", "name");
-  section_projects__title.innerText = 'Projects';
+  section_projects__title.textContent = 'Projects';
   projects.appendChild(section_projects__title);
 
   // 2. Create the project__header
@@ -152,7 +152,7 @@ const createProjectsSection = () => {
   project_headers.forEach((header) => {
     const project__header = document.createElement('h2');
     project__header.setAttribute("class", "project__header");
-    project__header.innerText = header;
+    project__header.textContent = header;
     projects.appendChild(project__header);
   });
 
@@ -164,10 +164,10 @@ const createProjectsSection = () => {
 
     // 4. Create the projects__detail
     projectsDetailsInfo.forEach(({ id, image, tech }) => {
-      const headerLowerCase = header.innerText.toLowerCase();
-      console.log({ headerLowerCase, tech });
-      console.log(headerLowerCase === tech);
-      if(headerLowerCase === tech) {
+      console.log(header.textContent);
+      console.log(tech);
+      console.log(header.textContent === tech);
+      if(header.textContent === tech) {
         const projects__detail = document.createElement('div');
         projects__detail.setAttribute('data-id', id);
         projects__detail.setAttribute("class", "projects__detail");
@@ -253,27 +253,27 @@ const createProcessSection = () => {
     project__title.appendChild(project__info);
 
     const project__info_title_label = document.createElement('h3');
-    project__info_title_label.innerText = 'Title';
+    project__info_title_label.textContent = 'Title';
     project__info.appendChild(project__info_title_label);
 
     const project__info_title = document.createElement('h4');
-    project__info_title.innerText = title;
+    project__info_title.textContent = title;
     project__info.appendChild(project__info_title);
 
     const project__info_role_label = document.createElement('h3');
-    project__info_role_label.innerText = 'Role';
+    project__info_role_label.textContent = 'Role';
     project__info.appendChild(project__info_role_label);
 
     const project__info_role = document.createElement('h4');
-    project__info_role.innerText = role;
+    project__info_role.textContent = role;
     project__info.appendChild(project__info_role);
 
     const project__info_type_label = document.createElement('h3');
-    project__info_type_label.innerText = 'Project Type';
+    project__info_type_label.textContent = 'Project Type';
     project__info.appendChild(project__info_type_label);
 
     const project__info_type = document.createElement('h4');
-    project__info_type.innerText = type;
+    project__info_type.textContent = type;
     project__info.appendChild(project__info_type);
 
 
@@ -286,7 +286,7 @@ const createProcessSection = () => {
     for (var key in techs) {
       const objectLength = Object.keys(links).length;
       const project__technologies_label = document.createElement('h3');
-      project__technologies_label.innerText = (objectLength <= 2 && key === 'tech1') ? updateLabel('tech') : updateLabel(key);
+      project__technologies_label.textContent = (objectLength <= 2 && key === 'tech1') ? updateLabel('tech') : updateLabel(key);
       project__technologies.appendChild(project__technologies_label);
 
       const project__technologies_list = document.createElement('ul');
@@ -295,7 +295,7 @@ const createProcessSection = () => {
 
       techs[key].forEach(tech => {
         const project__technologies_li = document.createElement('li');
-        project__technologies_li.innerText = tech;
+        project__technologies_li.textContent = tech;
         project__technologies_list.appendChild(project__technologies_li);
       });
     }
@@ -311,11 +311,11 @@ const createProcessSection = () => {
 
     const project__description_label = document.createElement('h3');
     project__description_label.setAttribute("class", "name");
-    project__description_label.innerText = 'Description';
+    project__description_label.textContent = 'Description';
     project__description.appendChild(project__description_label);
 
     const project__description_info = document.createElement('p');
-    project__description_info.innerText = description;
+    project__description_info.textContent = description;
     project__description.appendChild(project__description_info);
 
     // 8. Create links
@@ -328,7 +328,7 @@ const createProcessSection = () => {
     project__links_col.appendChild(project__links_title);
 
     const project__links_label = document.createElement('h3');
-    project__links_label.innerText = 'Links';
+    project__links_label.textContent = 'Links';
     project__links_title.appendChild(project__links_label);
 
     const project__links_list = document.createElement('ul');
@@ -342,7 +342,7 @@ const createProcessSection = () => {
       project__links_a.setAttribute("class", "process__project__title-links");
       project__links_a.setAttribute("href", links[key]);
       project__links_a.setAttribute("target", "_blank");
-      project__links_a.innerText = (objectLength <= 2 && key === 'code1') ? updateLabel('code') : updateLabel(key);
+      project__links_a.textContent = (objectLength <= 2 && key === 'code1') ? updateLabel('code') : updateLabel(key);
       project__links_li.appendChild(project__links_a); 
       project__links_list.appendChild(project__links_li);
     }
