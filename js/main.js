@@ -164,8 +164,8 @@ const createProjectsSection = () => {
 
     // 4. Create the projects__detail
     projectsDetailsInfo.forEach((project) => {
+      console.log(project);
       const { id, image, tech } = project;
-      console.log({ id, image, tech });
       const headerLowerCase = header.innerText.toLowerCase();
       if(headerLowerCase === tech) {
         const projects__detail = document.createElement('div');
