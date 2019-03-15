@@ -163,7 +163,8 @@ const createProjectsSection = () => {
     header.appendChild(projects__div);
 
     // 4. Create the projects__detail
-    projectsDetailsInfo.forEach(({ id, image, tech }) => {
+    projectsDetailsInfo.forEach((project) => {
+      const { id, image, tech } = project;
       console.log({ id, image, tech });
       const headerLowerCase = header.innerText.toLowerCase();
       if(headerLowerCase === tech) {
