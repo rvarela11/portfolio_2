@@ -164,9 +164,6 @@ const createProjectsSection = () => {
 
     // 4. Create the projects__detail
     projectsDetailsInfo.forEach(({ id, image, tech }) => {
-      console.log(header.textContent);
-      console.log(tech);
-      console.log(header.textContent === tech);
       if(header.textContent === tech) {
         const projects__detail = document.createElement('div');
         projects__detail.setAttribute('data-id', id);
