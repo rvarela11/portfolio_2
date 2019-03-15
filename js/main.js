@@ -22,6 +22,7 @@ const createProjectsSection = () => {
 
   // 3. Create the projects__div
   const projectsDetailsInfo = [
+    { id: 'keep-austin-nerdy', image: 'assets/keep-austin-nerdy-logo.jpg', tech: 'react' },
     { id: 'silvercar', image: 'https://s3.amazonaws.com/development-silvercar-static-assets/assets/web-assets/silvercar-by-audi.svg', tech: 'react' },
     { id: 'verb', image: 'assets/verb-logo.png', tech: 'react' },
     { id: 'pbc', image: 'assets/pbc-logo.jpg', tech: 'react'  },
@@ -64,7 +65,7 @@ const all_projects_detail = document.querySelectorAll(".projects__detail");
 
 function displayProject() {
   const project_data_id = this.dataset.id;
-  const filters = ["silvercar", "verb", "pbc", "fuel", "portfolio",
+  const filters = ["keep-austin-nerdy", "silvercar", "verb", "pbc", "fuel", "portfolio",
     "arrive-demo-app", "hangman"
   ];
 
