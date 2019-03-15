@@ -184,7 +184,7 @@ span {
     flex-direction: column;
     justify-content: center;
 }
-.projects__header {
+.project__header {
     font-size: inherit;
     font-weight: 100;
 }
