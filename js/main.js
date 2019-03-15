@@ -164,8 +164,9 @@ const createProjectsSection = () => {
 
     // 4. Create the projects__detail
     projectsDetailsInfo.forEach(({ id, image, tech }) => {
-      console.log({ id, image, tech });
       const headerLowerCase = header.innerText.toLowerCase();
+      console.log({ headerLowerCase, tech });
+      console.log(headerLowerCase === tech);
       if(headerLowerCase === tech) {
         const projects__detail = document.createElement('div');
         projects__detail.setAttribute('data-id', id);
