@@ -5,6 +5,20 @@
 const projects = document.getElementById("projects");
 const projectsDetailsInfo = [
   { 
+    id: 'wellsmith',
+    description: 'A portal were healthcare providers can monitor and manage the care for their chronic disease populations.',
+    image: 'assets/wellsmith-logo.png',
+    links: {},
+    role: 'Front-End Engineer',
+    tech: 'react',
+    techs: {
+      tech1: ['React', 'Apollo', 'GraphQL', 'Vega-Lite'],
+      other: [ 'LESS', 'Responsive design', 'Eslint Airbnb', 'Typescript', 'Cypress']
+    },
+    title: 'Wellsmith Health Portal',
+    type: 'Work'
+  },
+  { 
     id: 'keep-austin-nerdy',
     description: 'Austin trivia quiz app',
     image: 'assets/keep-austin-nerdy-logo.jpg',
@@ -13,7 +27,7 @@ const projectsDetailsInfo = [
       code2: "https://github.com/rvarela11/phunware-apollo",
       site: "http://robertvarela.com/keep-austin-nerdy"
     },
-    role: 'FED',
+    role: 'Front-End Developer',
     tech: 'react',
     techs: {
       tech1: ['React', 'Redux'],
@@ -21,7 +35,7 @@ const projectsDetailsInfo = [
       other: [ 'SCSS', 'Responsive design', 'Eslint Airbnb', 'Enzyme', 'Material UI',]
     },
     title: 'Keep Austin Nerdy Quiz',
-    type: 'Personal Project'
+    type: 'Personal'
   },
   { 
     id: 'silvercar',
@@ -32,7 +46,7 @@ const projectsDetailsInfo = [
       code2: "https://github.com/rvarela11/silvercar-apollo",
       site: "http://robertvarela.com/silvercar"
     },
-    role: 'FED',
+    role: 'Front-End Developer',
     tech: 'react',
     techs: {
       tech1: ['React', 'Redux'],
@@ -40,7 +54,7 @@ const projectsDetailsInfo = [
       other: [ 'SCSS', 'Responsive design', 'Eslint Airbnb', 'Enzyme', 'Material UI',]
     },
     title: 'Silvercar Demo',
-    type: 'Personal Project'
+    type: 'Personal'
   },
   { 
     id: 'verb',
@@ -50,45 +64,13 @@ const projectsDetailsInfo = [
       code1: "https://github.com/rvarela11/verb-2",
       site: "http://robertvarela.com/verb-2/"
     },
-    role: 'FED',
+    role: 'Front-End Developer',
     tech: 'react',
     techs: {
       tech1: ['React', 'Redux', 'Vanilla JavaScript']
     },
     title: 'Verb Demo',
-    type: 'Personal Project'
-  },
-  { 
-    id: 'pbc',
-    description: 'Alumni and company directory for Patriot Boot Camp. Patriot Boot Camp (PBC) is a nonprofit on a mission to equip active duty military members, Veterans, and their spouses with the education, resources, and community needed to be successful technology entrepreneurs.',
-    image: 'assets/pbc-logo.jpg',
-    links: {
-      code1: "https://github.com/rvarela11/pbc-2"
-    },
-    role: 'FED',
-    tech: 'react',
-    techs: {
-      tech1: ['React', 'Redux']
-    },
-    title: 'Patriot Boot Camp Alumni Directory',
-    type: 'Personal Project'
-  },
-  { 
-    id: 'fuel',
-    description: 'Fuel helps you compare your goal calories vs your daily calories in three simple steps. The first step is to get your goal calories. The second step is to get your daily calories. The third step will give you a breakdown.',
-    image: 'assets/fuel-logo.jpg',
-    links: {
-      code1: "https://github.com/rvarela11/fuel-react",
-      site: "http://fuel.surge.sh/"
-    },
-    role: 'FED',
-    tech: 'react',
-    techs: {
-      tech1: ['React', 'Redux', 'Vanilla JavaScript'],
-      other: [ 'Nutritionix(API)', 'Materialize']
-    },
-    title: 'Fuel',
-    type: 'Personal Project'
+    type: 'Personal'
   },
   { 
     id: 'arrive-demo-app',
@@ -97,13 +79,13 @@ const projectsDetailsInfo = [
     links: {
       code1: "https://github.com/rvarela11/arrive-mobile-app-demo"
     },
-    role: 'FED',
+    role: 'Front-End Developer',
     tech: 'react native',
     techs: {
       tech1: ['React Native', 'Redux']
     },
     title: 'Arrive Demo App',
-    type: 'Personal Project'
+    type: 'Personal'
   },
   { 
     id: 'portfolio',
@@ -113,13 +95,13 @@ const projectsDetailsInfo = [
       code1: "https://github.com/rvarela11/rvarela11.github.io",
       site: "http://robertvarela.com"
     },
-    role: 'FED',
+    role: 'Front-End Developer',
     tech: 'vanilla javascript',
     techs: {
       tech1: ['Vanilla JavaScript']
     },
     title: 'Portfolio',
-    type: 'Personal Project'
+    type: 'Personal'
    }
 ];
 
@@ -358,7 +340,7 @@ const all_projects_detail = document.querySelectorAll(".projects__detail");
 
 function displayProject() {
   const project_data_id = this.dataset.id;
-  const filters = ["keep-austin-nerdy", "silvercar", "verb", "pbc", "fuel", "portfolio",
+  const filters = ["wellsmith", "keep-austin-nerdy", "silvercar", "verb", "portfolio",
     "arrive-demo-app", "hangman"
   ];
 
