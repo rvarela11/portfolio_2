@@ -102,6 +102,22 @@ const projectsDetailsInfo = [
     },
     title: 'Portfolio',
     type: 'Personal'
+   },
+   { 
+    id: 'bubblicious',
+    description: 'A bubble game done in vanilla javascript.',
+    image: 'assets/game-boy-logo.svg',
+    links: {
+      code1: "https://github.com/rvarela11/bubblicious",
+      site: "http://robertvarela.com/bubblicious"
+    },
+    role: 'Front-End Developer',
+    tech: 'vanilla javascript',
+    techs: {
+      tech1: ['Vanilla JavaScript']
+    },
+    title: 'Bubblicious',
+    type: 'Personal'
    }
 ];
 
@@ -341,8 +357,7 @@ const all_projects_detail = document.querySelectorAll(".projects__detail");
 function displayProject() {
   const project_data_id = this.dataset.id;
   const filters = ["wellsmith", "keep-austin-nerdy", "silvercar", "verb", "portfolio",
-    "arrive-demo-app", "hangman"
-  ];
+    "arrive-demo-app", "bubblicious"];
 
   filters.forEach((filter) => {
     if (project_data_id === filter) {
