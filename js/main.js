@@ -5,20 +5,6 @@
 const projects = document.getElementById("projects");
 const projectsDetailsInfo = [
   { 
-    id: 'wellsmith',
-    description: 'A portal were healthcare providers can monitor and manage the care for their chronic disease populations.',
-    image: 'assets/wellsmith-logo.png',
-    links: {},
-    role: 'Front-End Engineer',
-    tech: 'react',
-    techs: {
-      tech1: ['React', 'Apollo', 'GraphQL', 'Vega-Lite'],
-      other: [ 'LESS', 'Responsive design', 'Eslint Airbnb', 'Typescript', 'Cypress']
-    },
-    title: 'Wellsmith Health Portal',
-    type: 'Work'
-  },
-  { 
     id: 'keep-austin-nerdy',
     description: 'Austin trivia quiz app',
     image: 'assets/keep-austin-nerdy-logo.jpg',
