@@ -336,7 +336,6 @@ const createProcessSection = () => {
       const project__links_a = document.createElement('a');
       project__links_a.setAttribute("class", "process__project__title-links");
       project__links_a.setAttribute("href", links[key]);
-      project__links_a.setAttribute("target", "_blank");
       project__links_a.textContent = (objectLength <= 2 && key === 'code1') ? updateLabel('code') : updateLabel(key);
       project__links_li.appendChild(project__links_a); 
       project__links_list.appendChild(project__links_li);
