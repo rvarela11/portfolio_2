@@ -59,18 +59,20 @@ const projectsDetailsInfo = [
     type: 'Personal'
   },
   { 
-    id: 'arrive-demo-app',
-    description: 'A mobile application that allows users to upload and edit a document.',
-    image: 'assets/arrive-demo-app.jpg',
+    id: 'wave',
+    description: 'A messaging Web3 app',
+    image: 'assets/wave-logo.png',
     links: {
-      code1: "https://github.com/rvarela11/arrive-mobile-app-demo"
+      'UI': "https://github.com/rvarela11/wave",
+      'solidity': "https://github.com/rvarela11/wave-solidity",
+      site: "http://robertvarela.com/wave"
     },
-    role: 'Front-End Developer',
-    tech: 'react native',
+    role: 'Full-Stack Developer',
+    tech: 'web3',
     techs: {
-      tech1: ['React Native', 'Redux']
+      tech1: ['React', 'Redux', 'Ethers', 'Solidity']
     },
-    title: 'Arrive Demo App',
+    title: 'Wave Dapp',
     type: 'Personal'
   },
   { 
@@ -132,7 +134,7 @@ const createProjectsSection = () => {
   projects.appendChild(section_projects__title);
 
   // 2. Create the project__header
-  const project_headers = ['react', 'react native', 'vanilla javascript'];
+  const project_headers = ['react', 'web3', 'vanilla javascript'];
   project_headers.forEach((header) => {
     const project__header = document.createElement('h2');
     project__header.setAttribute("class", "project__header");
@@ -341,8 +343,8 @@ const all_projects_detail = document.querySelectorAll(".projects__detail");
 
 function displayProject() {
   const project_data_id = this.dataset.id;
-  const filters = ["wellsmith", "keep-austin-nerdy", "silvercar", "verb", "portfolio",
-    "arrive-demo-app", "bubblicious"];
+  const filters = ["keep-austin-nerdy", "silvercar", "verb", "portfolio",
+    "wave", "bubblicious"];
 
   filters.forEach((filter) => {
     if (project_data_id === filter) {
